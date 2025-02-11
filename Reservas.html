@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Agencia Espacial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('Imagenes/universo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .reserva-container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .ofertas {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="reserva-container text-center">
+            <h2>Reserva tu Viaje Espacial</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="destino" class="form-label">Destino</label>
+                    <select class="form-control" id="destino" required>
+                        <option>Marte</option>
+                        <option>Estación Orbital Alfa</option>
+                        <option>Júpiter</option>
+                        <option>Exoplaneta Kepler-442b</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha de Viaje</label>
+                    <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pasajeros" class="form-label">Número de Pasajeros</label>
+                    <input type="number" class="form-control" id="pasajeros" min="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Reservar Ahora</button>
+            </form>
+        </div>
+
+        <div class="ofertas text-center text-light">
+            <h3>Ofertas Especiales</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light">
+                        <img src="https://source.unsplash.com/400x300/?mars" class="card-img-top" alt="Marte">
+                        <div class="card-body">
+                            <h5 class="card-title">Aventura en Marte</h5>
+                            <p class="card-text">Explora el planeta rojo con un paquete todo incluido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light">
+                        <img src="https://source.unsplash.com/400x300/?space-station" class="card-img-top" alt="Estación Orbital">
+                        <div class="card-body">
+                            <h5 class="card-title">Lujo en la Estación Orbital</h5>
+                            <p class="card-text">Disfruta de una estadía de lujo en la órbita terrestre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-light">
+                        <img src="https://source.unsplash.com/400x300/?exoplanet" class="card-img-top" alt="Exoplaneta">
+                        <div class="card-body">
+                            <h5 class="card-title">Expedición a un Exoplaneta</h5>
+                            <p class="card-text">Sé de los primeros en visitar un mundo fuera del sistema solar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
